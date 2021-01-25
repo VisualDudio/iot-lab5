@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      .container{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./index.js"></script>
+    
+  </head>
+
+  <body>
+    <div class="container jumbotron">
+      <div>
+        <canvas id="map"></canvas>
+      </div> 
+      <div>
+        <img src="./media/default_background.png" id='pics' style="width: 400px; height: 300px">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container">
+        <div class="jumbotron text-center col-md-6">
+          <span>&nbsp;&nbsp;</span> 
+          <span id="upArrow" style='font-size:50px; color:grey;'>&#8679;</span>
+          <br>
+          <span id="leftArrow" style='font-size:45px; color:grey;'>&#8678;</span>
+          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+          <span id="rightArrow" style='font-size:45px; color:grey;'>&#8680;</span>
+          <br>
+          <span>&nbsp;&nbsp;</span> 
+          <span id="downArrow" style='font-size:50px; color:grey;'>&#8681;</span>
+        </div>
+
+        <div class="jumbotron text-left col-md-6">
+          <p>
+            <span id="direction_dot" style="color:green">&bull;</span> Car Direction: <span id="direction">[0,1]</span>
+            <br>
+            <span id="location_dot" style="color:green">&bull;</span> Location: <span id="location">[0,0]</span>
+            <br>
+            <span id="speed_dot" style="color:green">&bull;</span> Speed: <span id="speed">0.0</span>  
+            <br>
+            <span id="distance_dot" style="color:green">&bull;</span> Distance Traveled: <span id="distance">0.0</span>
+            <br>
+            <span id="temperature_dot" style="color:green">&bull;</span> Temperature of the Pi: <span id="temperature">0.0</span>
+            <br>
+            <span id="battery_dot" style="color:green">&bull;</span> Battery of the Pi: <span id="battery">0.0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
